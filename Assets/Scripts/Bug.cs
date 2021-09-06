@@ -46,6 +46,7 @@ public class Bug : MonoBehaviour
         if (0 >= lifeCounter)
         {
             Destroy(gameObject);
+            bugSpawner.BugDied();
             return;
         }
 

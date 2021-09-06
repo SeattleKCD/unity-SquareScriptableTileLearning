@@ -70,7 +70,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        print("minX = " + minX + ", maxX = " + maxX + ", minY = " + minY + ", maxY = " + maxY);
+        //print("minX = " + minX + ", maxX = " + maxX + ", minY = " + minY + ", maxY = " + maxY);
 
     }
 
@@ -137,11 +137,11 @@ public class MapManager : MonoBehaviour
 
             TileBase clickedTile = map.GetTile(gridPosition);
 
-            float walkingSpeed = dataFromTiles[clickedTile].walkingSpeed;
-            float foodValue = tileFoodData[gridPosition];
+            //float walkingSpeed = dataFromTiles[clickedTile].walkingSpeed;
+            //float foodValue = tileFoodData[gridPosition];
 
-            print("World position " + mousePosition + ", Cell position " + gridPosition);
-            print("Walking speed on " + clickedTile + " is " + walkingSpeed + ", Food Value is " + foodValue);
+            //print("World position " + mousePosition + ", Cell position " + gridPosition);
+            //print("Walking speed on " + clickedTile + " is " + walkingSpeed + ", Food Value is " + foodValue);
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

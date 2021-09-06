@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class BugSpawner : MonoBehaviour
 {
+    private UIController uiController;
+
     [SerializeField]
     private Bug bugPrefab;
 
-    void Awake()
+    private int bugCount = 0;
+
+
+    void Start ()
     {
+        uiController = FindObjectOfType<UIController>();
+
         //if (Input.GetKey(KeyCode.Space))
         for (int spawnCnt = 0; spawnCnt < 1; spawnCnt++)
         {
@@ -22,6 +29,14 @@ public class BugSpawner : MonoBehaviour
 
         newBug.transform.position = atPosition;
         newBug.ChangeDirection();
+
+        bugCount++;
+        uiController.UpdateBugCount(bugCount);
     }
 
+    public void BugDied ()
+    {
+        bugCount--;
+        uiController.UpdateBugCount(bugCount);
+    }
 }
