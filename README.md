@@ -10,3 +10,7 @@ Instead of using fire to burn tiles and adding stink from follow on videos, my v
 - Grass grows back over time as long as some remains on tile
 - Bugs replicate over time, amount of grass in tile determines bug replication rate and tile graphic
 - Bugs die after a fixed lifetime
+
+9/6/21 Version (with Unity version 2021.1.19f1)
+- Added basic UI controls using experimental UI Builder features
+- Added basic spash screen
